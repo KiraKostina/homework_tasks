@@ -1,30 +1,126 @@
-function isEnoughCapacity(products, containerSize) { 
-  let totalQuantity = 0;
-  const values = Object.values(products);
-  for (const value of values) {
-    totalQuantity += value;
-  }
-  if (totalQuantity <= containerSize) {
-    return true;
-  } else {
-    return false;
-  }
- 
-}
+//TODO:=========task-02================= HOMEWORK!!!
+//Перетворити рядок, що містить слова, розділені комами, в масив слів і вивести кожне слово в окремому рядку.
+// const str = 'JavaScript, HTML, CSS, React';
+
+//TODO:=========task-03=================
+// Знайти кількість слів у рядку, використовуючи методи масивів та цикл for...of.
+// const message = 'JavaScript is a popular programming language.';
+
+//TODO:=========task-04=================
+// Об'єднати масив слів в рядок, розділений комами та пробілами.
+// const words = ['JavaScript', 'HTML', 'CSS', 'React'];
+
+//TODO:=========task-05=================
+// Знайти всі елементи масиву, що містять задану підстроку, та об'єднати їх у новий масив, після чого вивести у консоль лог повідомлення "Масив елементів, що містять підстроку substring: ..." .Результат повинен бути розділений комами та пробілами.(використати indexOf)
+
+// const stringArray = ['JavaScript', 'HTML', 'CSS', 'React'];
+// const substring = 'S';
+
+// console.log(
+//   `Масив елементів, що містять підстроку ${substring} : ${joinedArray}`
+// );
+
+//TODO:=========task-06=================
+// Перевірити, чи містить масив заданий елемент. Якщо містить, видалити його, якщо ні - додати в кінець масиву.
+//  const array = ['JavaScript', 'HTML', 'CSS', 'SS'];
+//  const elem = 'SS';
+
+//TODO:============task-07==============
+// Напишіть функцію min(a, b), яка повертає
+// менше з чисел a, b
+// Потрібно додати перевірку, що функція отримує числа
+
+// function min(a, b) {
+//     if (typeof a !== "number" || typeof b !== "number") return "Error";
+//     // return Math.min(a, b);
+//     return a < b ? a : b;
+// }
+// console.log(min(5, 10));
+
+//TODO:=============task-08=================
+// напиши функцію яка сумуватиме сусідні числа і пушити в новий масив
+
+// function sumAdjacentNumbers(array) {
+    // const newArr = [];
+    // for (let i = 0; i < array.length -1; i++) {
+        // console.log(array[i]);
+      //  newArr.push(array[i] + array[i+1]) 
+    // }
+    // return newArr;
+// }
+// 
+// const someArr = [22, 11, 34, 5, 12, 13, 14, 15];
+// 
+// const result = sumAdjacentNumbers(someArr);
+// console.log(result); // [33, 45, 39, 17, 25, 27, 29]
+
+//TODO:=========task-09=================
+//Напишіть функцію caclculateAverage()
+//яка приймає довільну кількість
+//аргументів і повертає їхнє середнє значення.
+//Додати перевірку, що аргументи це числа. Array.from()
+
+// console.log(calculateAverage(10, 10, 20, 200));
+
+//TODO:=============task-10=================
+// Написати функцію, яка приймає рядок і повертає кількість голосних літер у цьому рядку. `Містить ${count} голосних`
+
+// const str = "This is a new line";
+// const vowels = ["a", "e", "i", "o", "u"];
+
+// console.log(countVowels(str));
+
+//TODO:=========task-11=================
+// Знайти перший парний елемент масиву, який більший за 10, використовуючи цикл з оператором break та continue.
+// const numbers = [5, 11, 21, 8, 7, 15, 11, 11];
+
+// console.log(getOddNumbers(numbers));
 
 
-console.log(
-  isEnoughCapacity({ apples: 2, grapes: 3, carrots: 1 }, 8)
-); // true
 
-console.log(
-  isEnoughCapacity({ apples: 4, grapes: 6, lime: 16 }, 12)
-); // false
 
-console.log(
-  isEnoughCapacity({ apples: 1, lime: 5, tomatoes: 3 }, 14)
-); // true
 
-console.log(
-  isEnoughCapacity({ apples: 18, potatoes: 5, oranges: 2 }, 7)
-); // false
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
