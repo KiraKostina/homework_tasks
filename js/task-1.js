@@ -1,24 +1,57 @@
 //TODO:=========task-02================= HOMEWORK!!!
 //Перетворити рядок, що містить слова, розділені комами, в масив слів і вивести кожне слово в окремому рядку.
 // const str = 'JavaScript, HTML, CSS, React';
-
+// const wordsArray = str.split(", ");
+// for (const word of wordsArray) {
+  // console.log(word);
+// }
+// 
+// 
 //TODO:=========task-03=================
 // Знайти кількість слів у рядку, використовуючи методи масивів та цикл for...of.
 // const message = 'JavaScript is a popular programming language.';
+// const words = message.split(" ");
+// let quantity = 0;
+
+// for (const element of words) {
+  // quantity += 1;
+// }
+// console.log(quantity);
+
+//  мне было бы проще через words.length //
 
 //TODO:=========task-04=================
 // Об'єднати масив слів в рядок, розділений комами та пробілами.
 // const words = ['JavaScript', 'HTML', 'CSS', 'React'];
+// console.log(words.join(", "));
 
 //TODO:=========task-05=================
 // Знайти всі елементи масиву, що містять задану підстроку, та об'єднати їх у новий масив, після чого вивести у консоль лог повідомлення "Масив елементів, що містять підстроку substring: ..." .Результат повинен бути розділений комами та пробілами.(використати indexOf)
 
-// const stringArray = ['JavaScript', 'HTML', 'CSS', 'React'];
-// const substring = 'S';
+const stringArray = ['JavaScript', 'HTML', 'CSS', 'React'];
+const substring = 'S';
+const elementIndex = stringArray.indexOf(substring)
+const joinedArray = [];
 
-// console.log(
-//   `Масив елементів, що містять підстроку ${substring} : ${joinedArray}`
-// );
+for (let i = 0; i < stringArray.length; i++) {
+  if (i === elementIndex){
+ joinedArray.push(stringArray[i]); 
+}
+  
+  
+  
+}
+
+// if (stringArray[i].includes(substring)) {
+  // joinedArray.push(stringArray[i]);
+// }
+
+  
+
+  console.log(joinedArray);
+console.log(
+  `Масив елементів, що містять підстроку ${substring} : ${joinedArray}`
+);
 
 //TODO:=========task-06=================
 // Перевірити, чи містить масив заданий елемент. Якщо містить, видалити його, якщо ні - додати в кінець масиву.
